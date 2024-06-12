@@ -1,2 +1,8 @@
 #!/bin/bash
-echo $(ls -a1p | grep -v -E '^\.$|^\.\.$' | sort -k1.1,1.1 -k1.2,1.2 | sed -e 's/$/,/' | tr -d '\n'),\.
+
+{
+  echo "./,"
+  echo "../,"
+  ls -a1p | grep -v -E '^\.$|^\.\.$' | sort -k1.1,1.1 -k1.2,1.2 | sed 's/$/, /'
+} | tr -d '\n' | sed 's/, $/\n/'
+
