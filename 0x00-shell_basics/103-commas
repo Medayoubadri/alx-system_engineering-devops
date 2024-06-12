@@ -1,3 +1,2 @@
 #!/bin/bash
 { ls -d . ..; ls -a1 | grep -vE '^(\.|..)$' | LC_COLLATE=C sort; } | paste -sd ',' - echo
-
