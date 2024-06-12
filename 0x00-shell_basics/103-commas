@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s," . .. $(ls -a1 | grep -vE '^(\.|..)$' | LC_COLLATE=C sort) | sed 's/,$/\n/'
+printf "%s, " ./ ../ $(ls -a1 | grep -vE '^(\.|..)$' | LC_COLLATE=C sort | sed 's|/$|/&|') | sed 's/, $/\n/'
