@@ -1,3 +1,2 @@
 #!/bin/bash
-(ls -d . .. * .[!.]* ..?* | awk '{if($0==".") {print "."} else if($0=="..") {print ".."} else if (substr($0,length($0))=="/") {print $0","} else {print $0}}' | paste -sd, -), echo
-
+echo $(ls -a1p | grep -v -E '^\.$|^\.\.$' | sort -k1.1,1.1 -k1.2,1.2 | sed -e 's/$/,/' | tr -d '\n'),\.
