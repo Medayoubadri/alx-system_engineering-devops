@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the username, user ID, and home directory from the /etc/passwd file.
+
+while IFS=":" read -r username x userid groupid userinfo homedir shell
+do
+    echo "$username:$userid:$homedir"
+done < /etc/passwd
