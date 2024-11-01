@@ -17,15 +17,16 @@ case "$1" in
             echo "manage_my_process is not running"
         fi
         ;;
-    restart)
+     restart)
         if [ -f /var/run/my_process.pid ]; then
-            PID=$(cat /var/run/my_process.pid)
-            kill "$PID"
-            rm -f /var/run/my_process.pid
-            echo "manage_my_process stopped"
+            pid=$(cat /var/run/my_process.pid)
+            kill "$pid" 2>/dev/null
+            rm /var/run/my_process.pid
         fi
-        ./manage_my_process &
-        echo $! > /var/run/my_process.pid
+        script_dir="$(dirname "$0")"
+        "$script_dir/manage_my_process" &
+        pid=$!
+        echo "$pid" > /var/run/my_process.pid
         echo "manage_my_process restarted"
         ;;
     *)
