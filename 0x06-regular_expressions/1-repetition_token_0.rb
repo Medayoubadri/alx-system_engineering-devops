@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-# (Disclaimer: This repetition can bring back memories of the endless coding loop)
+# (Disclaimer: I'm not a regex expert)
 
 puts ARGV[0].scan(/hbt{2,5}n/).join
