@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script modifies the /etc/hosts file to change localhost and facebook.com IPs.
+# It backs up the original hosts file first and then modifies it.
+
+# Backup the original hosts file
+cp /etc/hosts /etc/hosts.bak
+
+sed -i '/localhost/c\127.0.0.2\tlocalhost' /etc/hosts
+
+if grep -q 'facebook.com' /etc/hosts; then
+    sed -i '/facebook.com/c\8.8.8.8\tfacebook.com' /etc/hosts
+else
+    echo -e "8.8.8.8\tfacebook.com" >> /etc/hosts
+fi
