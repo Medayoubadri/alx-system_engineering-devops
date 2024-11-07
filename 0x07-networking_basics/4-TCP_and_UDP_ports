@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this script will show all the tcp and udp ports
+#-t: Shows only TCP sockets.
+#-u: Shows only UDP sockets.
+#-l: Lists only the listening sockets.
+#-n: Shows the numeric addresses of the network.
+#-p: Shows the PID and process name for each socket.
+
+ss -tuln -p
