@@ -39,4 +39,4 @@
 - No tools to track server health, traffic, or performance.
 
 ## Screenshot Link:
-[Distributed Web Infrastructure Diagram](https://imgur.com/Z52CEyE)
+[Distributed Web Infrastructure Diagram](https://imgur.com/nz8WOTg)
