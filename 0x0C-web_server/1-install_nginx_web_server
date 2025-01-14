@@ -1,0 +1,12 @@
+#!/bin/bash
+# This script installs and configures Nginx to serve a "Hello World!" page.
+
+# Update the package list and Install Nginx
+sudo apt-get update -y
+sudo apt-get install nginx -y
+
+# Create a custom index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Start/restart Nginx
+sudo service nginx restart
