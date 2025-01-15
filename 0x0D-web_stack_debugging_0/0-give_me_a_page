@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that start the Apache server and display a message
+
+service apache2 start
