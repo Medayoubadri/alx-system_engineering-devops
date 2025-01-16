@@ -2,5 +2,4 @@
 # Script that start the Apache server and display a message
 
 # Start the Apache service
-service apache2 start
-service apache2 status
+sudo service apache2 restart
