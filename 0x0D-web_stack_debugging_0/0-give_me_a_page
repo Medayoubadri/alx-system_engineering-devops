@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 # Script that start the Apache server and display a message
 
-# Start the Apache service
-sudo service apache2 restart
+# Set ServerName to suppress warnings
+echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+# Start Apache service
+service apache2 start
+
+# Ensure "Hello holberton" is served
+echo "Hello ALX" > /var/www/html/index.html
+
+# Check and output Apache service status
+service apache2 status | grep "apache2 is running"
