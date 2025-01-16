@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Script that start the Apache server and display a message
 
+# Start the Apache service
 service apache2 start
+
+# Check if Apache is running and output its status
+service apache2 status | grep "apache2 is running"
