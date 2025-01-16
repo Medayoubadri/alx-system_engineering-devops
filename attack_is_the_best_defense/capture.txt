@@ -1,0 +1,92 @@
+15:50:03.495019 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [S], seq 950237323, win 64240, options [mss 1460,sackOK,TS val 3406045917 ecr 0,nop,wscale 7], length 0
+E..<..@.@.......49.~...K8.x.........A..........
+..".........
+15:50:03.554792 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [S.], seq 99668655, ack 950237324, win 31856, options [mss 1412,sackOK,TS val 1347020900 ecr 3406045917,nop,wscale 9], length 0
+E..<..@.0...49.~.....K......8.x...|p.,.........
+PI.d.."....	
+15:50:03.554836 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 1, win 502, options [nop,nop,TS val 3406045977 ecr 1347020900], length 0
+E..4..@.@.......49.~...K8.x.........X	.....
+..#.PI.d
+15:50:03.555133 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 1:37, ack 1, win 502, options [nop,nop,TS val 3406045977 ecr 1347020900], length 36
+E..X..@.@.......49.~...K8.x................
+..#.PI.dEHLO ismtpd0001p1las1.sendgrid.net
+
+15:50:03.615375 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 1, win 63, options [nop,nop,TS val 1347020958 ecr 3406045977], length 0
+E..4..@.0...49.~.....K......8.x....?Y......
+PI....#.
+15:50:03.615376 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [P.], seq 1:55, ack 1, win 63, options [nop,nop,TS val 1347020959 ecr 3406045977], length 54
+E..j..@.0...49.~.....K......8.x....?.".....
+PI....#.220 SG ESMTP service ready at geopod-ismtpd-canary-0
+
+15:50:03.615377 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 37, win 63, options [nop,nop,TS val 1347020959 ecr 3406045977], length 0
+E..4..@.0...49.~.....K......8.x....?Y+.....
+PI....#.
+15:50:03.615377 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [P.], seq 55:185, ack 37, win 63, options [nop,nop,TS val 1347020959 ecr 3406045977], length 130
+E.....@.0...49.~.....K......8.x....?nA.....
+PI....#.250-smtp.sendgrid.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 31457280
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250 AUTH=PLAIN LOGIN
+
+15:50:03.615410 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 55, win 502, options [nop,nop,TS val 3406046037 ecr 1347020959], length 0
+E..4..@.@.......49.~...K8.x.........W8.....
+..#UPI..
+15:50:03.615437 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 185, win 501, options [nop,nop,TS val 3406046037 ecr 1347020959], length 0
+E..4..@.@.......49.~...K8.x....h....V......
+..#UPI..
+15:50:05.444588 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 37:49, ack 185, win 501, options [nop,nop,TS val 3406047866 ecr 1347020959], length 12
+E..@..@.@.......49.~...K8.x....h....sT.....
+..*zPI..auth login
+
+15:50:05.504905 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 49, win 63, options [nop,nop,TS val 1347022848 ecr 3406047866], length 0
+E..4..@.2...49.~.....K.....h8.x....?I......
+PI....*z
+15:50:05.504907 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [P.], seq 185:203, ack 49, win 63, options [nop,nop,TS val 1347022849 ecr 3406047866], length 18
+E..F..@.2...49.~.....K.....h8.x....?.:.....
+PI....*z334 VXNlcm5hbWU6
+
+15:50:05.504965 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 203, win 501, options [nop,nop,TS val 3406047927 ecr 1347022849], length 0
+E..4..@.@.......49.~...K8.x....z....G......
+..*.PI..
+15:50:07.445945 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 49:63, ack 203, win 501, options [nop,nop,TS val 3406049868 ecr 1347022849], length 14
+E..B..@.@.......49.~...K8.x....z...........
+..2LPI..bXlsb2dpbg==
+
+15:50:07.505174 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 63, win 63, options [nop,nop,TS val 1347024850 ecr 3406049868], length 0
+E..4..@.2...49.~.....K.....z8.x....?:......
+PI....2L
+15:50:07.505176 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [P.], seq 203:221, ack 63, win 63, options [nop,nop,TS val 1347024850 ecr 3406049868], length 18
+E..F..@.2...49.~.....K.....z8.x....?.......
+PI....2L334 UGFzc3dvcmQ6
+
+15:50:07.505208 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 221, win 501, options [nop,nop,TS val 3406049927 ecr 1347024850], length 0
+E..4..@.@.......49.~...K8.x.........8......
+..2.PI..
+15:50:09.447401 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 63:85, ack 221, win 501, options [nop,nop,TS val 3406051869 ecr 1347024850], length 22
+E..J..@.@.......49.~...K8.x................
+..:.PI..bXlwYXNzd29yZDk4OTgh
+
+15:50:09.514384 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 85, win 63, options [nop,nop,TS val 1347026852 ecr 3406051869], length 0
+E..4..@.2...49.~.....K......8.x....?*L.....
+PI....:.
+15:50:09.634830 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [P.], seq 221:273, ack 85, win 63, options [nop,nop,TS val 1347026976 ecr 3406051869], length 52
+E..h..@.2...49.~.....K......8.x....?=......
+PJ. ..:.535 Authentication failed: Bad username / password
+
+15:50:09.634831 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [F.], seq 273, ack 85, win 63, options [nop,nop,TS val 1347026976 ecr 3406051869], length 0
+E..4..@.2..
+49.~.....K......8.x....?)......
+PJ. ..:.
+15:50:09.634890 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 273, win 501, options [nop,nop,TS val 3406052057 ecr 1347026976], length 0
+E..4..@.@.......49.~...K8.x.........'*.....
+..:.PJ. 
+15:50:09.634999 IP ProBook-4540s.59610 > ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission: Flags [F.], seq 85, ack 274, win 501, options [nop,nop,TS val 3406052057 ecr 1347026976], length 0
+E..4..@.@.......49.~...K8.x.........'(.....
+..:.PJ. 
+15:50:09.694677 IP ec2-52-57-139-126.eu-central-1.compute.amazonaws.com.submission > ProBook-4540s.59610: Flags [.], ack 86, win 63, options [nop,nop,TS val 1347027039 ecr 3406052057], length 0
+E..4..@.2..	49.~.....K......8.x....?(......
+PJ._..:.
+
