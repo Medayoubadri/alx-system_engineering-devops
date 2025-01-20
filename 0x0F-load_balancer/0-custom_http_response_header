@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Configures Nginx to add a custom HTTP header
+
+# Update and upgrade the system
+apt-get update
+apt-get install nginx -y
+
+# Add custom header to Nginx configuration
+sed -i '/http {/a \    add_header X-Served-By $hostname;' /etc/nginx/nginx.conf
+
+# Restart Nginx
+sudo systemctl restart nginx
