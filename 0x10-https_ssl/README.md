@@ -9,6 +9,7 @@ This project focuses on configuring HTTPS SSL for web servers and includes the f
 
 - `0-world_wide_web`: Bash script to display information about subdomains.
 - `1-haproxy_ssl_termination`: HAProxy configuration file for SSL termination.
+- `2. No loophole in your website traffic`: HAProxy configuration file to redirect HTTP traffic to HTTPS.
 
 ## Requirements
 
