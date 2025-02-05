@@ -2,8 +2,5 @@
 # Generates a MySQL dump and creates a compressed archive out of it
 
 MYSQL_USER="root"
-MYSQL_PASS="$1"
-DATE=$(date +"%d-%m-%Y")
-mysqldump -u "$MYSQL_USER" -p"$MYSQL_PASS" --all-databases >backup.sql
-tar -czf "$DATE.tar.gz" backup.sql
-rm backup.sql
+mysqldump -u "$MYSQL_USER" -p"$1" --all-databases >backup.sql
+tar -czf "$(date +"%d-%m-%Y")" backup.sql
