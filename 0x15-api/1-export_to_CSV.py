@@ -27,7 +27,8 @@ if __name__ == "__main__":
         with open(filename, mode='w', newline='') as csv_file:
             writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
             for todo in todos_data:
-                writer.writerow([employee_id, username, str(todo['completed']), todo['title']])
+                writer.writerow([employee_id, username,
+                                 str(todo['completed']), todo['title']])
 
         print(f"Data exported to {filename}")
 
