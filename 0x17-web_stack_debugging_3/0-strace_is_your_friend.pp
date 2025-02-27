@@ -1,5 +1,5 @@
 # Fixes the Apache 500 error by correcting file extension in wp-settings.php
 exec { 'fix-wordpress':
-  command => 'sudo sed -i s/phpp/php/g /var/www/html/wp-settings.php',
-  path    => '/usr/bin:/usr/sbin:/bin',
+  command => 'bash -c "sed -i \'s/\.php5/\.php/g\' /var/www/html/wp-settings.php"',
+  path    => '/usr/bin',
 }
