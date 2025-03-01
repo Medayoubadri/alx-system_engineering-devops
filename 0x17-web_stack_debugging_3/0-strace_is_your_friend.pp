@@ -1,6 +1,6 @@
-# Fixes Apache 500 error and ensures WordPress displays correctly
+# Fixes Apache 500 error by correcting file extensions
 exec { 'fix-wordpress':
-  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  command => 'sed -i "s/\.phpp/.php/g" /var/www/html/wp-settings.php',
   path    => '/usr/local/bin/:/bin/'
 }
 
