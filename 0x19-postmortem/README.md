@@ -4,9 +4,7 @@
 
 On a fateful Wednesday, our beloved web service decided it was too cool for school by running as root instead of under the humble `nginx` user. The outage started at **14:00 UTC+1** and was resolved by **14:12 UTC+1**, creating a 12-minute rollercoaster of chaos. About 80% of users faced 503 errors while our Bash script—meant to be neat and 7 lines long—turned into a mischievous saboteur by running everything as root.
 
-> **Meme Moment:**  
-> ![This is Fine](https://i.imgflip.com/24y43o.jpg)  
-> _When you think everything's fine, but your server's throwing a root party._
+> _When you think everything's fine, but your server's throwing a root party._ > ![This is Fine](/assets/this-is-fine.jpg)
 
 ## Timeline
 
@@ -38,13 +36,9 @@ To ensure our server doesn't decide to go rogue again, we’re implementing the 
   - [ ] Update the deployment pipeline with a user validation step.
   - [ ] Schedule a monthly configuration audit.
 
-> **Meme Break:**  
-> ![Distracted Boyfriend](https://i.imgflip.com/1ur9b0.jpg)  
-> _Bash Script (distracted by) Running as Root vs. Proper Configuration._
+> _Bash Script (distracted by) Running as Root vs. Proper Configuration._ > ![Distracted Boyfriend](https://i.imgflip.com/1ur9b0.jpg)
 
-> **One Does Not Simply:**  
-> ![One Does Not Simply](https://i.imgflip.com/1bij.jpg)  
-> _One does not simply debug a production outage without a strong cup of coffee..._
+> _One does not simply debug a production outage without a strong cup of coffee..._ > ![One Does Not Simply](/assets/CmJXIP_WYAAlVsp.jpg)
 
 ## Diagram
 
