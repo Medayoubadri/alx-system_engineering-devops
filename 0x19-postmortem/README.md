@@ -58,5 +58,5 @@ flowchart TD
     G --> H[Quick Fix Attempt: 14:12 UTC+1]
     H --> I[Coffee Break: 14:13 UTC+1]
     I --> J[Resolution Confirmed: 14:15 UTC+1]
-    J [Coffee Break: 14:16 UTC+1]
+    J[Coffee Break: 14:16 UTC+1]
 ```
