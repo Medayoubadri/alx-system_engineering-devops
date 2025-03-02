@@ -45,7 +45,7 @@ To ensure our server doesn't decide to go rogue again, we’re implementing the 
 
 ## Diagram
 
-Here's a fun diagram suggestion to visualize the timeline of our incident:
+Here's a diagram suggestion of what actually happened to visualize the timeline of our incident:
 
 ```mermaid
 flowchart TD
