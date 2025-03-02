@@ -5,7 +5,7 @@
 On a fateful Wednesday, our beloved web service decided it was too cool for school by running as root instead of under the humble `nginx` user. The outage started at **14:00 UTC+1** and was resolved by **14:12 UTC+1**, creating a 12-minute rollercoaster of chaos. About 80% of users faced 503 errors while our Bash script—meant to be neat and 7 lines long—turned into a mischievous saboteur by running everything as root.
 
 > _When you think everything's fine, but your server's throwing a root party._ >
-> <img src="/assets/this-is-fine.jpg" alt="This is Fine" />
+> <img src="/0x19-postmortem/assets/this-is-fine.jpg" alt="This is Fine" />
 
 ## Timeline
 
@@ -38,10 +38,10 @@ To ensure our server doesn't decide to go rogue again, we’re implementing the 
   - [ ] Schedule a monthly configuration audit.
 
 > _Bash Script (distracted by) Running as Root vs. Proper Configuration._ >
-> <img src="![/assets/bash-script-running-as-root.jpg](https://i.imgflip.com/1ur9b0.jpg)" alt="Bash Script Running as Root" />
+> <img src="https://i.imgflip.com/1ur9b0.jpg" alt="Bash Script Running as Root" />
 
 > _One does not simply debug a production outage without a strong cup of coffee..._ >
-> <img src="/assets/CmJXIP_WYAAlVsp.jpg" alt="One Does Not Simply" />
+> <img src="/0x19-postmortem/assets/CmJXIP_WYAAlVsp.jpg" alt="One Does Not Simply" />
 
 ## Diagram
 
@@ -56,7 +56,7 @@ flowchart TD
     E --> F[Escalation: 14:10 UTC+1]
     F --> G[Coffee Break: 14:11 UTC+1]
     G --> H[Quick Fix Attempt: 14:12 UTC+1]
-    H --> I [Coffee Break: 14:13 UTC+1]
+    H --> I[Coffee Break: 14:13 UTC+1]
     I --> J[Resolution Confirmed: 14:15 UTC+1]
     J [Coffee Break: 14:16 UTC+1]
 ```
