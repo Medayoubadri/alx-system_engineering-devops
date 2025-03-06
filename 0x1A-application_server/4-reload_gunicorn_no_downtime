@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Gracefully reload Gunicorn using pkill
+
+echo "Sending HUP signal to all Gunicorn processes..."
+pkill -HUP -f "gunicorn.*web_dynamic.2-hbnb:app"
+
+echo "Signal sent. Verifying processes..."
+sleep 2
+ps aux | grep -E '[g]unicorn'
