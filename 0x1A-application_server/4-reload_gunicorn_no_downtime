@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Gracefully reload Gunicorn using pkill
 
-systemctl status gunicorn | grep -oE 'Main PID: [0-9]+' | cut -d ' ' -f3 | xargs kill -HUP
+MASTER_PID=$(pgrep -f "gunicorn" | head -n 1)
+kill -HUP "$MASTER_PID"
