@@ -2,8 +2,4 @@
 # Gracefully reload Gunicorn using pkill
 
 MASTER_PID=$(pgrep -f "gunicorn" | head -n 1)
-if [ -n "$MASTER_PID" ]; then
-    pkill -HUP "$MASTER_PID"
-else
-    echo "No Gunicorn process found."
-fi
+kill -HUP "$MASTER_PID"
