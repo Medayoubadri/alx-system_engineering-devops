@@ -3,3 +3,4 @@
 
 MASTER_PID=$(pgrep -f "gunicorn" | head -n 1)
 kill -HUP "$MASTER_PID"
+echo "OK"
